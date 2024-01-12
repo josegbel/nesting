@@ -1,0 +1,17 @@
+query GetMyPlan {
+  getUser {
+    id
+    profileCompletion
+    isPremium
+    details {
+      age
+      name
+    }
+    profile {
+      pictures
+    }
+    verification {
+      emailVerified
+    }
+  }
+}

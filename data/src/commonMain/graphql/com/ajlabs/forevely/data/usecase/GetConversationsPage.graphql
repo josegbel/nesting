@@ -1,0 +1,19 @@
+query GetConversationsPage($pageInput: PageInput!) {
+  getConversationsPage(pageInput: $pageInput) {
+    info {
+      count
+      pages
+      next
+      prev
+    }
+    conversations {
+      id
+      matcherName
+      picture
+      lastMessage {
+        timestamp
+        content
+      }
+    }
+  }
+}

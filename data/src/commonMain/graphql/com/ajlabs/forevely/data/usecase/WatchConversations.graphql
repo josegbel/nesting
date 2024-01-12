@@ -1,0 +1,12 @@
+subscription WatchConversations($userId: ObjectId!) {
+  watchConversations(userId: $userId) {
+    senderName
+    message {
+      content
+      conversationId
+      id
+      senderId
+      timestamp
+    }
+  }
+}

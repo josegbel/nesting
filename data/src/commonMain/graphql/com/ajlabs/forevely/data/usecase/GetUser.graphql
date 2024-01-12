@@ -1,0 +1,72 @@
+query GetUser {
+  getUser {
+    id
+    email
+    profileCompletion
+    isPremium
+    conversationIds
+    details {
+      name
+      dob
+      age
+      phone
+      education
+      gender
+      job
+      currentLoc {
+        geo
+        city
+        country
+        state
+      }
+      birthLoc {
+        city
+        country
+      }
+      liveLoc {
+        city
+        country
+      }
+    }
+    profile {
+      aboutMe {
+        children
+        diet
+        drinking
+        education
+        fitness
+        height
+        loveLanguage
+        languages
+        personality
+        pets
+        politics
+        relationship
+        religion
+        smoking
+        zodiac
+      }
+      openQuestion
+      bio
+      interests {
+        creativities
+        culinaries
+        genders
+        leisures
+        minds
+        natures
+        socials
+        sports
+        technologies
+        size
+      }
+      pictures
+    }
+    updatedAt
+    verification {
+      emailVerified
+      phoneVerified
+      photoVerified
+    }
+  }
+}

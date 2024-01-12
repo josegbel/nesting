@@ -1,0 +1,8 @@
+mutation CreateConversation($matcherId: ObjectId!) {
+  createConversation(matcherId: $matcherId) {
+    id
+    lastMessageTimestamp
+    messageIds
+    participantIds
+  }
+}

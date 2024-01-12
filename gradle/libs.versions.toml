@@ -1,0 +1,132 @@
+[versions]
+projectName = "Forevely"
+projectPackage = "com.ajlabs.forevely"
+javaVersion = "17"
+compileSdk = "34"
+minSdk = "29"
+#
+agp = "8.1.4"
+activityCompose = "1.8.2"
+androidxCore = "1.12.0"
+apollo = "4.0.0-beta.2"
+appCompat = "1.2.0"
+ballast = "4.0.0"
+buildkonfig = "0.15.0"
+coil = "2.4.0"
+compose = "1.5.11"
+composeCompiler = "1.5.6"
+coroutines = "1.7.3"
+datetime = "0.4.1"
+detekt = "1.23.3"
+haze = "0.4.1"
+insetsx = "0.1.0-alpha10"
+kamelImage = "0.8.3"
+kermit = "2.0.2"
+koin = "3.5.0"
+koin-compose = "1.1.0"
+koinKtor = "3.5.1"
+kotlin = "1.9.21"
+kotlinxSerializationJson = "1.6.2"
+kover = "0.7.4"
+ksp = "1.9.21-1.0.15"
+ktLint = "11.6.1"
+ktor = "2.3.6"
+lifecycle = "2.1.0"
+mapsCompose = "2.15.0"
+maps-secrets = "2.0.1"
+mockative = "2.0.1"
+multiplatformSettings = "1.1.0"
+pagingComposeCommon = "3.3.0-alpha02-0.4.0"
+playServices = "21.0.1"
+playServicesMaps = "18.2.0"
+security = "1.1.0-alpha06"
+turbine = "1.0.0"
+uiTooling = "1.5.4"
+uuid = "0.8.2"
+
+[libraries]
+androidx-activityCompose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
+androidx-core = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
+androidx-gms-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServices" }
+androidx-gms-playServicesMaps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
+androidx-gradle = { module = "com.android.tools.build:gradle", version.ref = "agp" }
+androidx-securityCrypto = { module = "androidx.security:security-crypto", version.ref = "security" }
+androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "uiTooling" }
+androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "uiTooling" }
+maps-compose = { module = "com.google.maps.android:maps-compose", version.ref = "mapsCompose" }
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+
+apollo-runtime = { module = "com.apollographql.apollo3:apollo-runtime", version.ref = "apollo" }
+apollo-normalizedCache = { module = "com.apollographql.apollo3:apollo-normalized-cache", version.ref = "apollo" }
+apollo-normalizedCacheSqlite = { module = "com.apollographql.apollo3:apollo-normalized-cache-sqlite", version.ref = "apollo" }
+apollo-ktorEngine = { module = "com.apollographql.apollo3:apollo-engine-ktor", version.ref = "apollo" }
+apollo-mockserver = { module = "com.apollographql.apollo3:apollo-mockserver", version.ref = "apollo" }
+apollo-testingSupport = { module = "com.apollographql.apollo3:apollo-testing-support", version.ref = "apollo" }
+
+ballast-core = { module = "io.github.copper-leaf:ballast-core", version.ref = "ballast" }
+ballast-navigation = { module = "io.github.copper-leaf:ballast-navigation", version.ref = "ballast" }
+ballast-savedState = { module = "io.github.copper-leaf:ballast-saved-state", version.ref = "ballast" }
+ballast-firebaseCrashlytics = { module = "io.github.copper-leaf:ballast-firebase-crashlytics", version.ref = "ballast" }
+ballast-firebaseAnalytics = { module = "io.github.copper-leaf:ballast-firebase-analytics", version.ref = "ballast" }
+
+buildkonfig-gradle-plugin = { module = "com.codingfeline.buildkonfig:buildkonfig-gradle-plugin", version.ref = "buildkonfig" }
+
+coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+
+haze-common = { module = "dev.chrisbanes.haze:haze", version.ref = "haze" }
+haze-android = { module = "dev.chrisbanes.haze:haze-jetpack-compose", version.ref = "haze" }
+
+insetsx = { module = "com.moriatsushi.insetsx:insetsx", version.ref = "insetsx" }
+
+kamel-image = { module = "media.kamel:kamel-image", version.ref = "kamelImage" }
+kermit = { module = "co.touchlab:kermit", version.ref = "kermit" }
+
+koin-androidxCompose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-compose = { module = "io.insert-koin:koin-compose", version.ref = "koin-compose" }
+koin-logger = { module = "io.insert-koin:koin-logger-slf4j", version.ref = "koinKtor" }
+
+kotlin-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "datetime" }
+kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
+kotlin-uuid = { module = "com.benasher44:uuid", version.ref = "uuid" }
+
+ktor-client-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
+ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktor" }
+ktor-client-content = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
+ktor-client-darwin = { module = "io.ktor:ktor-client-darwin", version.ref = "ktor" }
+ktor-client-logging = { module = "io.ktor:ktor-client-logging", version.ref = "ktor" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor" }
+ktor-client-websockets = { module = "io.ktor:ktor-client-websockets", version.ref = "ktor" }
+ktor-serialization-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
+
+multiplatformSettings-common = { module = "com.russhwolf:multiplatform-settings", version.ref = "multiplatformSettings" }
+
+paging-compose-common = { module = "app.cash.paging:paging-compose-common", version.ref = "pagingComposeCommon" }
+
+# TESTING
+test-koin = { module = "io.insert-koin:koin-test", version.ref = "koin" }
+test-kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+test-kotlin-koin-test = { module = "io.insert-koin:koin-test", version.ref = "koin" }
+test-kotlin-mockative = { module = "io.mockative:mockative", version.ref = "mockative" }
+test-kotlin-mockativeProcessor = { module = "io.mockative:mockative-processor", version.ref = "mockative" }
+test-kotlin-multiplatformSettings = { module = "com.russhwolf:multiplatform-settings-test", version.ref = "multiplatformSettings" }
+test-kotlin-turbine = { module = "app.cash.turbine:turbine", version.ref = "turbine" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+apollo = { id = "com.apollographql.apollo3", version.ref = "apollo" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
+ktLint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktLint" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+kover = { id = "org.jetbrains.kotlinx.kover", version.ref = "kover" }
+maps-secrets = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "maps-secrets" }
+

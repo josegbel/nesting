@@ -1,0 +1,5 @@
+mutation SetIsPremium($isPremium: Boolean!) {
+  debugSetIsPremium(isPremium: $isPremium) {
+    isPremium
+  }
+}

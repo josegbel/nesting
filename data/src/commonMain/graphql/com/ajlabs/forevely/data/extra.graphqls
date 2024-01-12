@@ -1,0 +1,12 @@
+# This tells Apollo to use the 'id' field as the key to store object in the db
+extend type User
+@typePolicy(keyFields: "id")
+@fieldPolicy(forField: "userMinimal", keyArgs: "id, email")
+
+extend type UserMinimal @typePolicy(keyFields: "id")
+
+extend type Message @typePolicy(keyFields: "id")
+
+extend type Conversation @typePolicy(keyFields: "id")
+
+extend type Matcher @typePolicy(keyFields: "id")

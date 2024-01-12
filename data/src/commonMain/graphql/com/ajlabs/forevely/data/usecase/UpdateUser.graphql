@@ -1,0 +1,72 @@
+mutation UpdateUser($userUpdateInput: UserUpdateInput, $profileUpdateInput: ProfileUpdateInput, $personalDetailsUpdateInput: PersonalDetailsUpdateInput) {
+  updateUser(userUpdateInput: $userUpdateInput, profileUpdateInput: $profileUpdateInput, personalDetailsUpdateInput: $personalDetailsUpdateInput) {
+    conversationIds
+    details {
+      age
+      birthLoc {
+        city
+        country
+      }
+      currentLoc {
+        city
+        country
+        geo
+        state
+      }
+      dob
+      education
+      gender
+      job
+      liveLoc {
+        city
+        country
+      }
+      name
+      phone
+    }
+    email
+    id
+    isPremium
+    profile {
+      aboutMe {
+        children
+        diet
+        drinking
+        education
+        fitness
+        height
+        languages
+        loveLanguage
+        personality
+        pets
+        politics
+        relationship
+        religion
+        smoking
+        zodiac
+      }
+      bio
+      interests {
+        creativities
+        culinaries
+        genders
+        leisures
+        minds
+        natures
+        socials
+        sports
+        technologies
+        size
+      }
+      openQuestion
+      pictures
+    }
+    profileCompletion
+    updatedAt
+    verification {
+      emailVerified
+      phoneVerified
+      photoVerified
+    }
+  }
+}

@@ -1,0 +1,16 @@
+query GetMessagesPage($conversationId: ObjectId!, $pageInput: PageInput!) {
+  getMessagesPage(conversationId: $conversationId, pageInput: $pageInput) {
+    messages {
+      id
+      senderId
+      content
+      timestamp
+    }
+    info {
+      count
+      next
+      pages
+      prev
+    }
+  }
+}

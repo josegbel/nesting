@@ -1,0 +1,3 @@
+mutation SaveSwipe($swipeType: SwipeType!, $saveSwipeId: ObjectId!) {
+  saveSwipe(swipeType: $swipeType, id: $saveSwipeId)
+}

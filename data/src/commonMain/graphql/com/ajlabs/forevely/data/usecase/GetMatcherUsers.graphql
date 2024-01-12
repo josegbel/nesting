@@ -1,0 +1,49 @@
+query GetMatchersPage($matcherFilter: MatcherFilterInput!, $pageInput: PageInput!) {
+  getMatchersPage(matcherFilter: $matcherFilter, pageInput: $pageInput) {
+    info {
+      pages
+      count
+      prev
+      next
+    }
+    matchers {
+      age
+      birthLoc {
+        city
+        country
+      }
+      children
+      currentLoc {
+        latitude
+        longitude
+        city
+        country
+        state
+        distance
+      }
+      diet
+      drinking
+      education
+      fitness
+      gender
+      height
+      id
+      languages
+      liveLoc {
+        city
+        country
+      }
+      loveLanguage
+      name
+      personality
+      pets
+      pictures
+      politics
+      relationship
+      religion
+      smoking
+      verified
+      zodiac
+    }
+  }
+}

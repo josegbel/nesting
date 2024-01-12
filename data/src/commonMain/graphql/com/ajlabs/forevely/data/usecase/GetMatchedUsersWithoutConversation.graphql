@@ -1,0 +1,15 @@
+query GetMatchedUsersWithoutConversation($pageInput: PageInput!) {
+  getMatchedUsersWithoutConversation(pageInput: $pageInput) {
+    matchers {
+      id
+      name
+      picture
+    }
+    info {
+      count
+      next
+      pages
+      prev
+    }
+  }
+}
